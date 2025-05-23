@@ -1,0 +1,102 @@
+/* ======= RESET + BASE ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #1e140a; /* Terre foncée */
+    color: #fef9e7; /* Texte beige clair */
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* ======= HEADER ======= */
+header {
+    background-color: #d4af37; /* Or pour le header */
+    color: #1e140a;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+/* ======= ROADMAP SECTION ======= */
+.roadmap-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(44, 26, 12, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+
+.roadmap-section h2 {
+    font-size: 2.5em;
+    color: #ffea70;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature-block {
+    margin-bottom: 30px;
+}
+
+.feature-block h3 {
+    font-size: 2em;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.feature-block ul {
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+.feature-block li {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.feature-block li::before {
+    content: "• ";
+    color: #ffea70;
+    font-size: 1.5em;
+}
+
+/* ======= FOOTER ======= */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #1e140a;
+    color: #fef9e7;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* ======= RESPONSIVE ======= */
+@media screen and (max-width: 768px) {
+    .roadmap-section {
+        padding: 15px;
+    }
+
+    .feature-block h3 {
+        font-size: 1.8em;
+    }
+
+    .feature-block ul {
+        font-size: 1em;
+    }
+
+    .feature-block li {
+        font-size: 1.1em;
+    }
+}
