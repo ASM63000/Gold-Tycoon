@@ -1,0 +1,180 @@
+/* ======= RESET + BASE ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1e140a; /* Couleur foncée pour la mine */
+  color: #f8f1e5; /* Blanc cassé pour le texte */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+/* ======= HAUT DE PAGE (HEADER) ======= */
+header {
+  background: linear-gradient(45deg, #2c1b0d, #1e140a); /* Dégradé marron pour rappeler la terre */
+  padding: 20px 50px;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header .logo {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+header .logo img {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+  transform: scale(1.1);
+}
+
+header h1 {
+  font-size: 3.5em;
+  color: #f8b84d; /* Or éclatant */
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #f8f1e5; /* Blanc cassé */
+  text-decoration: none;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+nav ul li a:hover {
+  background-color: #f8b84d; /* Or au survol */
+  color: #1e140a;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* ======= CONTENU PRINCIPAL (MAIN CONTENT) ======= */
+.main-content {
+  padding: 80px 20px;
+  text-align: center;
+  background: url('https://www.example.com/mine-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5); /* Ombre pour contraster avec le fond */
+}
+
+.main-content h2 {
+  font-size: 3.5em;
+  color: #f8b84d; /* Or lumineux */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Ombre pour effet de profondeur */
+}
+
+.main-content p {
+  font-size: 1.4em;
+  color: #fff;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  padding: 20px;
+  border: 2px solid #f8b84d; /* Bordure couleur or */
+  border-radius: 10px;
+  background-color: rgba(30, 20, 10, 0.9); /* Fond sombre pour les paragraphes */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.main-content p:hover {
+  transform: scale(1.03); /* Effet zoom au survol */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* ======= FOOTER ======= */
+footer {
+  background-color: #1e140a; /* Fond sombre terreux */
+  color: #f8f1e5;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+footer .social-links {
+  margin-top: 20px;
+}
+
+footer .social-links a {
+  color: #f8f1e5; /* Couleur de base des emojis */
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 2.5em; /* Taille des emojis */
+  transition: color 0.3s, transform 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #f8b84d; /* Or clair au survol */
+  transform: scale(1.2); /* Effet zoom sur les emojis */
+}
+
+/* ======= MEDIA QUERIES (Responsive Design) ======= */
+@media screen and (max-width: 768px) {
+  header h1 {
+      font-size: 2.5em;
+  }
+
+  nav ul {
+      text-align: center;
+  }
+
+  nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  .main-content h2 {
+      font-size: 2.5em;
+  }
+
+  .main-content p {
+      font-size: 1.2em;
+  }
+
+  footer .social-links a {
+      font-size: 1.5em;
+  }
+}
